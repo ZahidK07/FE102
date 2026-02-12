@@ -98,3 +98,41 @@ let cels = [0, 10, 20];
 const farh = cels.map((n) => (n * 9/5) + 32);
 console.log(cels, "Celsius");
 console.log(farh, "C to F");
+
+
+console.log("");
+/*
+5️⃣ Extract Names from Objects
+
+Input 
+[
+  { name: "A", age: 20 },
+  { name: "B", age: 25 }
+]
+
+Output
+["A", "B"]
+
+*/
+
+let info_Obj = [
+  { name: "A", age: 20 },
+  { name: "B", age: 25 },
+];
+
+const getNames = info_Obj.map((items) => items.name);
+console.log(getNames);
+
+console.log("");
+/*
+    6️⃣ Convert Prices to GST Included (18%)
+
+    Input - [100, 200, 300]
+    Output - [118, 236, 354]
+*/
+
+let price = [100, 200, 300];
+const gstPrice = price.map((p) => p * 1.18 ) // * 1.18 used to calculate to add 18 percent 
+
+console.log(price,"Original");
+console.log(gstPrice,"Include GST");
