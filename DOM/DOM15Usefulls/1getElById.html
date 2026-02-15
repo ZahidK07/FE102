@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <ul id="ul"></ul>
+    </div>
+    <script>
+      const getUl = document.getElementById("ul");
+
+      let li = document.createElement("li");
+      li.textContent = "html";
+      getUl.insertAdjacentElement("afterbegin", li);
+
+    //   creating p tag and inserting div with a text in it
+    let createPara = document.createElement("p");
+    createPara.textContent = "This is Paragraph"
+
+    document.getElementById("div").appendChild(createPara);
+    
+    //chenged pragraph style by .style
+    createPara.style = "color:red; backGround: blue"
+
+    // checking Elemnts in console
+    console.log(createPara.textContent) //shows the text content of p Tag
+    
+    console.log(getUl.innerHTML); // shows html elemnt inside ul tag
+
+    console.log(li.innerText); // shows text inside li tag, same like text content
+    
+    </script>
+  </body>
+</html>

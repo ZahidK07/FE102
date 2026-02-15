@@ -81,23 +81,10 @@ console.log("");
 let celsiusArr = [0, 10, 20];
 let celsiusNum = celsiusArr.map((n) => (n * 9/5) + 32);
 
-console.log(celsiusArr, "Original Array");
+console.log(celsiusArr, "Q4");
 console.log(celsiusNum, "Celsius to Fahrenheit");
 
 console.log("");
-/*
-4️⃣ Convert Celsius to Fahrenheit
-
-Formula F = (C * 9/5) + 32
-
-Input  =  [0, 10, 20]
-Output = [32, 50, 68]
-*/
-
-let cels = [0, 10, 20];
-const farh = cels.map((n) => (n * 9/5) + 32);
-console.log(cels, "Celsius");
-console.log(farh, "C to F");
 
 
 console.log("");
@@ -121,6 +108,7 @@ let info_Obj = [
 ];
 
 const getNames = info_Obj.map((items) => items.name);
+console.log(info_Obj, "Q5");
 console.log(getNames);
 
 console.log("");
@@ -134,5 +122,55 @@ console.log("");
 let price = [100, 200, 300];
 const gstPrice = price.map((p) => p * 1.18 ) // * 1.18 used to calculate to add 18 percent 
 
-console.log(price,"Original");
+console.log(price,"Q6");
 console.log(gstPrice,"Include GST");
+
+console.log("");
+/*
+7️⃣ Boolean to String
+
+Input [true, false, true]
+Output ["true", "false", "true"]
+
+*/
+
+let bool = [true, false, true];
+const boolTostr = bool.map((b) => b.toString());
+
+console.log(bool, "Q7");
+console.log(boolTostr);
+
+console.log("");
+
+/*
+    8️⃣ Get Length of Each Word
+    Input ["apple", "banana", "kiwi"]
+
+    Output [5, 6, 4]
+*/
+
+let arr = ["apple", "banana", "kiwi"];
+const checkLen = arr.map((el) => el.length)
+console.log(checkLen, "Q8");
+
+console.log("");
+/*
+    9️⃣ Prefix Currency Symbol
+    Input [100, 250, 500]
+
+    Output ["₹100", "₹250", "₹500"]
+*/
+
+
+
+console.log("");
+/*
+    🔟 Capitalize First Letter
+    Input ["hello", "world"]
+    Output ["Hello", "World"]
+
+*/
+let letters = ["hello", "world"];
+const firstCaps = letters.map((word) => word[0].toUpperCase() + word.slice(1));
+console.log(letters, "Q10");
+console.log(firstCaps);
