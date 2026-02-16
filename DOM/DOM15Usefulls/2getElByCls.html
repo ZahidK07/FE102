@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get El By Cls</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          .container {
+            height: 200px;
+            width: 200px;
+            background: rgb(60, 236, 33);
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <ul>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+          </ul>
+        </div>
+
+        <script>
+          //Select li tags with same class
+          const lst = document.getElementsByClassName("list");
+          console.log(lst);
+
+          // Select li tag on index 0
+          lst[0].innerHTML = "HTML";
+
+          // Select li tag on index 1
+          lst[1].style = " backGround: red; color: black";
+          lst[1].innerHTML = "CSS";
+
+          // Select li tag on index 2
+          lst[2].textContent = "JS";
+
+          const pTag = document.createElement("p");
+          pTag.innerHTML = "A Paragraph";
+
+         // if there's only single Element we can select it by indexing [] and if only 1 elemnts so it be select always [0]
+          document.getElementsByClassName("container")[0].appendChild(pTag);
+
+          // change 3rd li style by using getElementsByClassName
+          document.getElementsByClassName("list")[2].style = "color: red; list-style: none;"
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

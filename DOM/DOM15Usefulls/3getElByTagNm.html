@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Element By Tag Name</title>
+  </head>
+  <body>
+    <h1>I am Html</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda odio
+        nulla optio laudantium ipsam in. Voluptas velit fuga est, aspernatur
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda odio
+        nulla optio laudantium ipsam in. Voluptas velit fuga est, aspernatur
+      </p>
+    </div>
+
+    <script>
+        // select h1 tag and change its text
+        let headerTag = document.getElementsByTagName("h1")
+        headerTag[0].textContent = "I am DOM"
+
+        // select P tags and style it
+        let pTags = document.getElementsByTagName('p');
+        pTags[1].style = "color: blue; background: red;"
+        pTags[0].style = "background: #000; color: lime;"
+
+    </script>
+  </body>
+</html>
